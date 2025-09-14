@@ -43,7 +43,11 @@ const tabs = [
   },
 ];
 
-const tabBarStyle: CSSProperties = {
+const tabBarStyle: React.CSSProperties & {
+  '--active-color'?: string;
+  '--bg-color'?: string;
+  '--height'?: string;
+} = {
   '--active-color': 'var(--adm-color-primary)',
   '--bg-color': '#fff',
   '--height': '60px',
