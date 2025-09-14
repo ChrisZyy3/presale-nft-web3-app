@@ -43,16 +43,12 @@ const tabs = [
   },
 ];
 
-const tabBarStyle: React.CSSProperties & {
-  '--active-color'?: string;
-  '--bg-color'?: string;
-  '--height'?: string;
-} = {
+const tabBarStyle = {
   '--active-color': 'var(--adm-color-primary)',
   '--bg-color': '#fff',
   '--height': '60px',
   borderTop: '1px solid #eee',
-};
+} as any;
 
 export default function MobileLayout({ children }: Props) {
   const router = useRouter();
