@@ -43,12 +43,15 @@ const tabs = [
   },
 ];
 
-const tabBarStyle = {
-  '--active-color': 'var(--adm-color-primary)',
-  '--bg-color': '#fff',
-  '--height': '60px',
+const tabBarStyle: React.CSSProperties = {
   borderTop: '1px solid #eee',
-} as any;
+  // @ts-ignore
+  '--active-color': 'var(--adm-color-primary)',
+  // @ts-ignore
+  '--bg-color': '#fff',
+  // @ts-ignore
+  '--height': '60px',
+};
 
 export default function MobileLayout({ children }: Props) {
   const router = useRouter();
